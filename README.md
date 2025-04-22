@@ -1,4 +1,4 @@
-# library-starter
+# UseXLSX
 
 Features:
 
@@ -7,18 +7,19 @@ Features:
 
 # Usage
 
-### 本地包测试
-
-当前目录下执行：
+### 安装
 
 ```bash
-pnpm link --global --dir=./
+pnpm add @oiij/xlsx
 ```
 
-目标目录：
+### 使用
 
-```bash
-pnpm link --global <package name>
+```vue
+<script setup lang="ts">
+import { useXLSX } from '@oiij/xlsx'
+const { transform, json2XLS, json2XLSX, json2CSV, exportSheet, json2Sheet, } = useXLSX()
+</script>
 ```
 
 ## License
